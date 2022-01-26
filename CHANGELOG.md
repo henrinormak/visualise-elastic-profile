@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/henrinormak/visualise-elastic-profile/compare/v1.1.0...v1.2.0) (2022-01-26)
+
+
+### Features
+
+* also ship Typescript types ([41f5eb2](https://github.com/henrinormak/visualise-elastic-profile/commit/41f5eb2399ca5426a0daff71a4dba891ac2fed10))
+
+
+### Bug Fixes
+
+* publish-release command ([410dd91](https://github.com/henrinormak/visualise-elastic-profile/commit/410dd91b5a72541548d1760d5a2c4f6fe8f31f5e))
+
 ## 1.1.0 (2022-01-26)
 
 
