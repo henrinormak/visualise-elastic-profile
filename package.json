@@ -26,6 +26,7 @@
     "url": "https://github.com/henrinormak/visualise-elastic-profile.git"
   },
   "scripts": {
+    "prepublishOnly": "yarn build && yarn test",
     "build": "tsc",
     "cli": "yarn build && node ./build/cli.js",
     "test": "yarn jest"

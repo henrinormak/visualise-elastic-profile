@@ -5,7 +5,7 @@ A simple tool for visualising the results from the [Profile API](https://www.ela
 ## Installation
 
 ```
-yarn global install visualise-elastic-profile
+yarn global add visualise-elastic-profile
 ```
 
 ## Usage
