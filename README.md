@@ -96,3 +96,7 @@ console.log(stringifyProfile(profile)); // same output as if using the CLI tool,
 
 console.log(stringifyProfile(profile, { maxWidth: 100, color: false })); // black-and-white output and with a fixed width of 100
 ```
+
+## Limitations / Known issues
+
+Currently it only supports the "non-humanised" output from the Profile API, i.e it expects the durations to be in nanoseconds.
