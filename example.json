@@ -1,0 +1,454 @@
+{
+  "shards": [
+    {
+      "searches": [
+        {
+          "query": [
+            {
+              "time_in_nanos": 8569306,
+              "breakdown": {
+                "build_scorer": 6282476,
+                "shallow_advance_count": 0,
+                "compute_max_score": 0,
+                "advance_count": 21,
+                "set_min_competitive_score_count": 0,
+                "match_count": 7,
+                "match": 56391,
+                "next_doc_count": 262,
+                "advance": 906329,
+                "score_count": 0,
+                "set_min_competitive_score": 0,
+                "build_scorer_count": 53,
+                "create_weight": 128650,
+                "create_weight_count": 1,
+                "shallow_advance": 0,
+                "next_doc": 1195460,
+                "score": 0,
+                "compute_max_score_count": 0
+              },
+              "type": "BooleanQuery",
+              "description": "#ConstantScore(DocValuesFieldExistsQuery [field=id]) #ConstantScore(status:working) #ConstantScore((#ConstantScore(status:working) #location:[55.776573051698506 TO 66.5132604399696],[22.5 TO 45.0]) (-ConstantScore(status:working) #LatLonShapeBoundingBoxQuery: field=location_geoshape:Rectangle(lat=55.77657301866769 TO 66.51326044311186 lon=22.5 TO 45.0))) #user_id:1",
+              "children": [
+                {
+                  "time_in_nanos": 637755,
+                  "breakdown": {
+                    "build_scorer": 125141,
+                    "shallow_advance_count": 0,
+                    "compute_max_score": 0,
+                    "advance_count": 283,
+                    "set_min_competitive_score_count": 0,
+                    "match_count": 0,
+                    "match": 0,
+                    "next_doc_count": 0,
+                    "advance": 505834,
+                    "score_count": 0,
+                    "set_min_competitive_score": 0,
+                    "build_scorer_count": 74,
+                    "create_weight": 6780,
+                    "create_weight_count": 1,
+                    "shallow_advance": 0,
+                    "next_doc": 0,
+                    "score": 0,
+                    "compute_max_score_count": 0
+                  },
+                  "type": "ConstantScoreQuery",
+                  "description": "ConstantScore(DocValuesFieldExistsQuery [field=id])",
+                  "children": [
+                    {
+                      "time_in_nanos": 583147,
+                      "breakdown": {
+                        "build_scorer": 100910,
+                        "shallow_advance_count": 0,
+                        "compute_max_score": 0,
+                        "advance_count": 283,
+                        "set_min_competitive_score_count": 0,
+                        "match_count": 0,
+                        "match": 0,
+                        "next_doc_count": 0,
+                        "advance": 482087,
+                        "score_count": 0,
+                        "set_min_competitive_score": 0,
+                        "build_scorer_count": 74,
+                        "create_weight": 150,
+                        "create_weight_count": 1,
+                        "shallow_advance": 0,
+                        "next_doc": 0,
+                        "score": 0,
+                        "compute_max_score_count": 0
+                      },
+                      "type": "DocValuesFieldExistsQuery",
+                      "description": "DocValuesFieldExistsQuery [field=id]"
+                    }
+                  ]
+                },
+                {
+                  "time_in_nanos": 2429839,
+                  "breakdown": {
+                    "build_scorer": 2072769,
+                    "shallow_advance_count": 0,
+                    "compute_max_score": 0,
+                    "advance_count": 912,
+                    "set_min_competitive_score_count": 0,
+                    "match_count": 0,
+                    "match": 0,
+                    "next_doc_count": 8,
+                    "advance": 348640,
+                    "score_count": 0,
+                    "set_min_competitive_score": 0,
+                    "build_scorer_count": 74,
+                    "create_weight": 7170,
+                    "create_weight_count": 1,
+                    "shallow_advance": 0,
+                    "next_doc": 1260,
+                    "score": 0,
+                    "compute_max_score_count": 0
+                  },
+                  "type": "ConstantScoreQuery",
+                  "description": "ConstantScore(status:working)",
+                  "children": [
+                    {
+                      "time_in_nanos": 2338191,
+                      "breakdown": {
+                        "build_scorer": 2060325,
+                        "shallow_advance_count": 0,
+                        "compute_max_score": 0,
+                        "advance_count": 912,
+                        "set_min_competitive_score_count": 0,
+                        "match_count": 0,
+                        "match": 0,
+                        "next_doc_count": 8,
+                        "advance": 275486,
+                        "score_count": 0,
+                        "set_min_competitive_score": 0,
+                        "build_scorer_count": 74,
+                        "create_weight": 1940,
+                        "create_weight_count": 1,
+                        "shallow_advance": 0,
+                        "next_doc": 440,
+                        "score": 0,
+                        "compute_max_score_count": 0
+                      },
+                      "type": "TermQuery",
+                      "description": "status:working"
+                    }
+                  ]
+                },
+                {
+                  "time_in_nanos": 4458247,
+                  "breakdown": {
+                    "build_scorer": 3487648,
+                    "shallow_advance_count": 0,
+                    "compute_max_score": 0,
+                    "advance_count": 283,
+                    "set_min_competitive_score_count": 0,
+                    "match_count": 7,
+                    "match": 54543,
+                    "next_doc_count": 0,
+                    "advance": 861086,
+                    "score_count": 0,
+                    "set_min_competitive_score": 0,
+                    "build_scorer_count": 74,
+                    "create_weight": 54970,
+                    "create_weight_count": 1,
+                    "shallow_advance": 0,
+                    "next_doc": 0,
+                    "score": 0,
+                    "compute_max_score_count": 0
+                  },
+                  "type": "ConstantScoreQuery",
+                  "description": "ConstantScore((#ConstantScore(status:working) #location:[55.776573051698506 TO 66.5132604399696],[22.5 TO 45.0]) (-ConstantScore(status:working) #LatLonShapeBoundingBoxQuery: field=location_geoshape:Rectangle(lat=55.77657301866769 TO 66.51326044311186 lon=22.5 TO 45.0)))",
+                  "children": [
+                    {
+                      "time_in_nanos": 4417080,
+                      "breakdown": {
+                        "build_scorer": 3475876,
+                        "shallow_advance_count": 0,
+                        "compute_max_score": 0,
+                        "advance_count": 283,
+                        "set_min_competitive_score_count": 0,
+                        "match_count": 7,
+                        "match": 53779,
+                        "next_doc_count": 0,
+                        "advance": 836955,
+                        "score_count": 0,
+                        "set_min_competitive_score": 0,
+                        "build_scorer_count": 74,
+                        "create_weight": 50470,
+                        "create_weight_count": 1,
+                        "shallow_advance": 0,
+                        "next_doc": 0,
+                        "score": 0,
+                        "compute_max_score_count": 0
+                      },
+                      "type": "BooleanQuery",
+                      "description": "(#ConstantScore(status:working) #location:[55.776573051698506 TO 66.5132604399696],[22.5 TO 45.0]) (-ConstantScore(status:working) #LatLonShapeBoundingBoxQuery: field=location_geoshape:Rectangle(lat=55.77657301866769 TO 66.51326044311186 lon=22.5 TO 45.0))",
+                      "children": [
+                        {
+                          "time_in_nanos": 2009814,
+                          "breakdown": {
+                            "build_scorer": 1512060,
+                            "shallow_advance_count": 0,
+                            "compute_max_score": 0,
+                            "advance_count": 216,
+                            "set_min_competitive_score_count": 0,
+                            "match_count": 4,
+                            "match": 28150,
+                            "next_doc_count": 0,
+                            "advance": 442814,
+                            "score_count": 0,
+                            "set_min_competitive_score": 0,
+                            "build_scorer_count": 74,
+                            "create_weight": 26790,
+                            "create_weight_count": 1,
+                            "shallow_advance": 0,
+                            "next_doc": 0,
+                            "score": 0,
+                            "compute_max_score_count": 0
+                          },
+                          "type": "BooleanQuery",
+                          "description": "#ConstantScore(status:working) #location:[55.776573051698506 TO 66.5132604399696],[22.5 TO 45.0]",
+                          "children": [
+                            {
+                              "time_in_nanos": 425488,
+                              "breakdown": {
+                                "build_scorer": 176122,
+                                "shallow_advance_count": 0,
+                                "compute_max_score": 0,
+                                "advance_count": 336,
+                                "set_min_competitive_score_count": 0,
+                                "match_count": 0,
+                                "match": 0,
+                                "next_doc_count": 0,
+                                "advance": 243356,
+                                "score_count": 0,
+                                "set_min_competitive_score": 0,
+                                "build_scorer_count": 74,
+                                "create_weight": 6010,
+                                "create_weight_count": 1,
+                                "shallow_advance": 0,
+                                "next_doc": 0,
+                                "score": 0,
+                                "compute_max_score_count": 0
+                              },
+                              "type": "ConstantScoreQuery",
+                              "description": "ConstantScore(status:working)",
+                              "children": [
+                                {
+                                  "time_in_nanos": 382492,
+                                  "breakdown": {
+                                    "build_scorer": 165246,
+                                    "shallow_advance_count": 0,
+                                    "compute_max_score": 0,
+                                    "advance_count": 336,
+                                    "set_min_competitive_score_count": 0,
+                                    "match_count": 0,
+                                    "match": 0,
+                                    "next_doc_count": 0,
+                                    "advance": 216276,
+                                    "score_count": 0,
+                                    "set_min_competitive_score": 0,
+                                    "build_scorer_count": 74,
+                                    "create_weight": 970,
+                                    "create_weight_count": 1,
+                                    "shallow_advance": 0,
+                                    "next_doc": 0,
+                                    "score": 0,
+                                    "compute_max_score_count": 0
+                                  },
+                                  "type": "TermQuery",
+                                  "description": "status:working"
+                                }
+                              ]
+                            },
+                            {
+                              "time_in_nanos": 1311418,
+                              "breakdown": {
+                                "build_scorer": 1125707,
+                                "shallow_advance_count": 0,
+                                "compute_max_score": 0,
+                                "advance_count": 334,
+                                "set_min_competitive_score_count": 0,
+                                "match_count": 4,
+                                "match": 27411,
+                                "next_doc_count": 0,
+                                "advance": 157640,
+                                "score_count": 0,
+                                "set_min_competitive_score": 0,
+                                "build_scorer_count": 74,
+                                "create_weight": 660,
+                                "create_weight_count": 1,
+                                "shallow_advance": 0,
+                                "next_doc": 0,
+                                "score": 0,
+                                "compute_max_score_count": 0
+                              },
+                              "type": "IndexOrDocValuesQuery",
+                              "description": "location:[55.776573051698506 TO 66.5132604399696],[22.5 TO 45.0]"
+                            }
+                          ]
+                        },
+                        {
+                          "time_in_nanos": 2153247,
+                          "breakdown": {
+                            "build_scorer": 1783955,
+                            "shallow_advance_count": 0,
+                            "compute_max_score": 0,
+                            "advance_count": 283,
+                            "set_min_competitive_score_count": 0,
+                            "match_count": 6,
+                            "match": 21461,
+                            "next_doc_count": 0,
+                            "advance": 333191,
+                            "score_count": 0,
+                            "set_min_competitive_score": 0,
+                            "build_scorer_count": 74,
+                            "create_weight": 14640,
+                            "create_weight_count": 1,
+                            "shallow_advance": 0,
+                            "next_doc": 0,
+                            "score": 0,
+                            "compute_max_score_count": 0
+                          },
+                          "type": "BooleanQuery",
+                          "description": "-ConstantScore(status:working) #LatLonShapeBoundingBoxQuery: field=location_geoshape:Rectangle(lat=55.77657301866769 TO 66.51326044311186 lon=22.5 TO 45.0)",
+                          "children": [
+                            {
+                              "time_in_nanos": 211989,
+                              "breakdown": {
+                                "build_scorer": 188309,
+                                "shallow_advance_count": 0,
+                                "compute_max_score": 0,
+                                "advance_count": 6,
+                                "set_min_competitive_score_count": 0,
+                                "match_count": 0,
+                                "match": 0,
+                                "next_doc_count": 0,
+                                "advance": 19030,
+                                "score_count": 0,
+                                "set_min_competitive_score": 0,
+                                "build_scorer_count": 53,
+                                "create_weight": 4650,
+                                "create_weight_count": 1,
+                                "shallow_advance": 0,
+                                "next_doc": 0,
+                                "score": 0,
+                                "compute_max_score_count": 0
+                              },
+                              "type": "ConstantScoreQuery",
+                              "description": "ConstantScore(status:working)",
+                              "children": [
+                                {
+                                  "time_in_nanos": 177451,
+                                  "breakdown": {
+                                    "build_scorer": 157911,
+                                    "shallow_advance_count": 0,
+                                    "compute_max_score": 0,
+                                    "advance_count": 6,
+                                    "set_min_competitive_score_count": 0,
+                                    "match_count": 0,
+                                    "match": 0,
+                                    "next_doc_count": 0,
+                                    "advance": 18440,
+                                    "score_count": 0,
+                                    "set_min_competitive_score": 0,
+                                    "build_scorer_count": 53,
+                                    "create_weight": 1100,
+                                    "create_weight_count": 1,
+                                    "shallow_advance": 0,
+                                    "next_doc": 0,
+                                    "score": 0,
+                                    "compute_max_score_count": 0
+                                  },
+                                  "type": "TermQuery",
+                                  "description": "status:working"
+                                }
+                              ]
+                            },
+                            {
+                              "time_in_nanos": 1838799,
+                              "breakdown": {
+                                "build_scorer": 1530742,
+                                "shallow_advance_count": 0,
+                                "compute_max_score": 0,
+                                "advance_count": 283,
+                                "set_min_competitive_score_count": 0,
+                                "match_count": 0,
+                                "match": 0,
+                                "next_doc_count": 0,
+                                "advance": 307267,
+                                "score_count": 0,
+                                "set_min_competitive_score": 0,
+                                "build_scorer_count": 74,
+                                "create_weight": 790,
+                                "create_weight_count": 1,
+                                "shallow_advance": 0,
+                                "next_doc": 0,
+                                "score": 0,
+                                "compute_max_score_count": 0
+                              },
+                              "type": "IndexOrDocValuesQuery",
+                              "description": "LatLonShapeBoundingBoxQuery: field=location_geoshape:Rectangle(lat=55.77657301866769 TO 66.51326044311186 lon=22.5 TO 45.0)"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "time_in_nanos": 562598,
+                  "breakdown": {
+                    "build_scorer": 358185,
+                    "shallow_advance_count": 0,
+                    "compute_max_score": 0,
+                    "advance_count": 664,
+                    "set_min_competitive_score_count": 0,
+                    "match_count": 0,
+                    "match": 0,
+                    "next_doc_count": 254,
+                    "advance": 192215,
+                    "score_count": 0,
+                    "set_min_competitive_score": 0,
+                    "build_scorer_count": 74,
+                    "create_weight": 960,
+                    "create_weight_count": 1,
+                    "shallow_advance": 0,
+                    "next_doc": 11238,
+                    "score": 0,
+                    "compute_max_score_count": 0
+                  },
+                  "type": "TermQuery",
+                  "description": "user_id:1"
+                }
+              ]
+            }
+          ],
+          "rewrite_time": 26250,
+          "collector": [
+            {
+              "name": "SimpleFieldCollector",
+              "time_in_nanos": 373093,
+              "reason": "search_top_hits"
+            }
+          ]
+        }
+      ],
+      "id": "shard-0",
+      "fetch": {
+        "time_in_nanos": 313310,
+        "breakdown": {
+          "load_stored_fields": 122670,
+          "next_reader": 77660,
+          "next_reader_count": 1,
+          "load_stored_fields_count": 1
+        },
+        "type": "fetch",
+        "description": "",
+        "debug": {
+          "stored_fields": ["_id", "_routing"]
+        }
+      },
+      "aggregations": []
+    }
+  ]
+}
