@@ -31,7 +31,7 @@
     "cli": "yarn build && node ./build/cli.js",
     "test": "yarn jest",
     "release": "yarn clean && yarn build && yarn test && standard-version",
-    "publish-release": "git push --follow-tags origin master && npm publish"
+    "publish-release": "git push --follow-tags origin main && npm publish"
   },
   "files": [
     "build/*"
