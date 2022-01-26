@@ -1,8 +1,25 @@
 {
-  "name": "es-profile-visualiser",
+  "name": "visualise-elastic-profile",
+  "description": "Visualise results from Profile API of ElasticSearch on the command line",
   "version": "1.0.0",
   "main": "build/index.js",
   "license": "MIT",
+  "author": {
+    "name": "Henri Normak",
+    "email": "henri.normak@gmail.com"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "homepage": "https://github.com/henrinormak/visualise-elastic-profile",
+  "bugs": {
+    "url": "https://github.com/henrinormak/visualise-elastic-profile/issues"
+  },
+  "keywords": ["elastic", "elasticsearch", "profile", "visualise"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henrinormak/visualise-elastic-profile.git"
+  },
   "scripts": {
     "build": "tsc",
     "cli": "yarn build && node ./build/cli.js",
