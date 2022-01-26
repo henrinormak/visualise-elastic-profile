@@ -12,6 +12,7 @@
     "sourceMap": true,
     "lib": ["es2019"],
     "resolveJsonModule": true,
+    "declaration": true
   },
   "include": [
     "src/**/*.ts"
