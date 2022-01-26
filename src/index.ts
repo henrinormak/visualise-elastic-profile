@@ -8,6 +8,7 @@ import {
   getQueryTypesFromProfile,
   getAllLeafQueriesFromProfile,
   Profile,
+  NestedProfile,
 } from './utils';
 
 /**
@@ -20,7 +21,14 @@ export const stringifyProfile = (
   options: { maxWidth: number; color: boolean } = { maxWidth: 80, color: true },
 ): string => {
   const result: string[] = [];
-  const profile = Profile.check(profileData);
+  let profile: Profile;
+
+  if (NestedProfile.guard(profileData)) {
+    profile = NestedProfile.check(profileData).profile;
+  } else {
+    profile = Profile.check(profileData);
+  }
+
   const maxTimeInNanos = profile.shards
     .flatMap((shard) => shard.searches)
     .flatMap((search) => search.query)

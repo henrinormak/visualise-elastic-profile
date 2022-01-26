@@ -47,3 +47,8 @@ export const Profile = Runtypes.Record({
   ),
 });
 export type Profile = Runtypes.Static<typeof Profile>;
+
+export const NestedProfile = Runtypes.Record({
+  profile: Profile,
+});
+export type NestedProfile = Runtypes.Static<typeof NestedProfile>;

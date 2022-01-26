@@ -14,7 +14,7 @@ yarn global install visualise-elastic-profile
 visualise-elastic-profile profile.json
 ```
 
-Where `profile.json` is a path to a JSON file with the contents of the `profile` key from the Profile API. An example of such a file is included in this repository as `example.json`.
+Where `profile.json` is a path to a JSON file with the contents of the `profile` key from the Profile API (or just a full response from the Search API that includes the `profile` key). An example of such a file is included in this repository as `example.json`.
 
 Output from this command is a simplified report of the profiling data, including a stringified timeline for each shard, and an overview of the leaf queries (i.e queries that do not have any children) by how much aggregated time is spent in those.
 
