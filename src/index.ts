@@ -2,11 +2,11 @@ import chalk from 'chalk';
 
 import {
   arrayToMultiMap,
-  colors,
   queryToString,
   durationToString,
   getQueryTypesFromProfile,
   getAllLeafQueriesFromProfile,
+  getColor,
   Profile,
   NestedProfile,
 } from './utils';
@@ -37,7 +37,7 @@ export const stringifyProfile = (
   // Determine colors to use per query type
   const queryTypes = getQueryTypesFromProfile(profile);
   const colorByQueryType = options.color
-    ? new Map<string, string>(Array.from(queryTypes.values()).map((type, idx) => [type, colors[idx % colors.length]]))
+    ? new Map<string, string>(Array.from(queryTypes.values()).map((type, idx) => [type, getColor(type)]))
     : undefined;
 
   const gray = options.color ? chalk.gray : (value: string) => value;

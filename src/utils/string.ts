@@ -3,24 +3,6 @@ import stripAnsi from 'strip-ansi';
 
 import { Query, QueryType } from './types';
 
-export const colors: string[] = [
-  '#b54605',
-  '#4a768f',
-  '#a69890',
-  '#e68d5a',
-  '#93c7e6',
-  '#d98dab',
-  '#52806d',
-  '#07e089',
-  '#e80761',
-  '#870c3d',
-  '#4e2366',
-  '#44732a',
-  '#a2f277',
-  '#a92feb',
-  '#4e2a61',
-];
-
 const SYMBOLS = {
   Empty: '',
   Full: '█',
